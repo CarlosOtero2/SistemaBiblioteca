@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar Proyecto",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g", 
+        "main.cpp",
+        "menu.cpp",
+        "-o",
+        "build/outDebug"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compila el proyecto completo con múltiples archivos."
+    }
+  ]
+}
